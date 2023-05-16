@@ -1,0 +1,225 @@
+
+/* ------------------------ RESET CSS ------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ------------------------ GLOBAL ------------------------ */
+
+html{
+    background-color: var(--color-almostWhite);
+}
+header, main, footer, section {
+	max-width:var(--max-width);
+	min-width:var(--min-width);
+	margin:0 auto;
+}
+
+body{
+	display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+	max-width:var(--max-width);
+	min-width:var(--min-width);
+	margin:0 auto;
+	font-family: var(--font-family-text);
+	z-index: 1;
+}
+
+main{
+    width: 100%;
+    max-width: 600px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 100px auto 50px auto;
+	position: relative;
+    border-radius: var(--general-border-radius);
+    background-color: var(--color-white);
+    box-shadow: var(--general-shadow);
+}
+
+
+
+/* ------------------------ TEXTES ------------------------ */
+
+a{
+	color:var(--color-black);
+	text-decoration: none;
+}
+
+p, h1, h2, h3,h4, h5, h6{
+	margin:0;
+	line-height:120%;
+}
+
+h1{
+    font-family: var(--font-family-bigTitle);
+	font-weight: 700;
+    font-size: 1.75em;
+    margin: 5px 0 2px 0;
+}
+
+h2{
+    font-family: var(--font-family-bigTitle);
+	font-weight: 700;
+    font-size: 1.5em;
+    margin: 10px 0 5px 0;
+}
+
+p{
+    font-family: var(--font-family-text);
+    font-weight: 400;
+    font-size: 1.25em;
+	margin-bottom: 0.5em;
+}
+@media all and (max-width:768px){
+		body{
+			margin: 0 20px;
+		}
+		main{
+			margin-bottom: 30px;
+		}
+}
+@media all and (max-width:620px){
+
+		
+}
+@media all and (max-width:360px){
+		
+}
+
+/* ------------------------ SECTIONS ------------------------ */
+
+section{
+	width:100%;
+	height:auto;
+	margin:auto;
+	display:flex;
+	flex-wrap:wrap;
+    position: static;
+}
+
+@media all and (max-width:768px){
+
+}
+@media all and (max-width:620px){
+
+}
+@media all and (max-width:430px){
+}
+
+
+.contentWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    margin: 40px 30px 60px 30px;
+}
+
+.imageWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    width: 200px;
+    height: 200px;
+    margin: -100px auto 20px auto;
+    border-radius: 50%;
+}
+
+.imageWrapper img{
+    max-width: 200px;
+    width: 100%;
+} 
+
+
+
+/* ------------------------ COORDONNEES ------------------------ */
+
+.coordonnees{
+	width: 100%;
+    display:flex;
+	flex-direction: column;
+    justify-content:flex-start;
+    font-size:1.3em;
+    text-align:left;
+	text-align: center;
+}
+.coordonnees h3{
+	display:inline-block;
+	margin:10px 0 1px 5px;
+}
+.coordonnees li{
+	margin-bottom:5px;
+}
+.coordonnees li:nth-child(4){
+	margin-top:10px;
+}
+.littlelogo{
+	display:inline-block;
+}
+.fab{
+	font-size:1.3em;
+	letter-spacing:.5rem;
+}
+
+/* ------------------------ FOOTER  ------------------------ */
+
+footer{
+    display: flex;
+	max-width:var(--max-width);
+	min-width:var(--min-width);
+    align-items: center;
+    justify-content: center;
+	margin:0 auto;
+	height: 130px;
+}
